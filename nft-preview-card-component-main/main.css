@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+main,
+div,
+footer {
+  border: 1px dotted pink;
+}
+
+.container {
+  background-color: rgb(13, 26, 45);
+}
+
+.card {
+  background-color: rgb(21, 39, 63);
+}
+
+.attribution {
+  color: gray;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}

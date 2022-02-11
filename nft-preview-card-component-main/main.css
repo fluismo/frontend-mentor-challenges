@@ -3,12 +3,8 @@
   margin: 0px;
   padding: 0px;
   font-family: "Outfit", sans-serif;
-}
-
-main,
-footer {
-  border: 1px dotted pink;
-  color: antiquewhite;
+  /* helps me see the blocks and understand the logic */
+  /* border: 1px dotted pink; */
 }
 
 .container {
@@ -23,21 +19,91 @@ footer {
 
 .card {
   background-color: rgb(21, 39, 63);
+  max-width: 350px;
+  max-height: 600px;
+  /* height: 100%; */
+  /* width: 100%; */
+  padding: 1.5rem;
+  border-radius: 4%;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
-.nft {
+.nft img {
+  width: 100%;
+  border-radius: 3%;
+  margin-bottom: 1rem;
 }
 
-.content {
+.content h1 {
+  color: white;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  color: rgb(150, 170, 200);
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(150, 170, 200, 0.2);
+}
+
+.infos .value {
+  color: rgb(39, 236, 244);
+  font-weight: 600;
+}
+
+.infos .time {
+  color: rgb(150, 170, 200);
+  font-weight: 300;
+}
+
+i {
+  margin-right: 6px;
+  max-height: 20px;
+}
+
+i img {
+  vertical-align: -3px;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(150, 170, 200);
+  font-weight: 300;
+}
+
+.author img {
+  width: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.white {
+  color: white;
 }
 
 .attribution {
-  color: gray;
+  margin-top: 40px;
+  color: rgb(250, 58, 105);
   font-size: 11px;
+  font-weight: 300;
   text-align: center;
 }
 .attribution a {
-  color: black;
+  color: rgb(250, 58, 105);
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
 }

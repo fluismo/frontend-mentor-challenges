@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  /* helps me visualize logic in build */
+  border: 1px dashed cyan;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}

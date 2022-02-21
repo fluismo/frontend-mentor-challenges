@@ -2,9 +2,20 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: "Red Hat Display", sans-serif;
   /* helps me visualize logic in build */
-  border: 1px dashed cyan;
+  border: 1px dotted salmon;
 }
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-position: center;
+  background-size: auto;
+  background-color: azure;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

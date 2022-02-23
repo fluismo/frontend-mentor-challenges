@@ -1,27 +1,154 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: "Red Hat Display", sans-serif;
   /* helps me visualize logic in build */
-  border: 1px dotted salmon;
+  /* border: 1px dashed salmon; */
 }
 
 .wrapper {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   background-image: url(images/pattern-background-desktop.svg);
-  background-position: center;
-  background-size: auto;
-  background-color: azure;
+  background-color: rgb(224, 232, 255);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 450px;
+  max-height: 700px;
+  height: 100%;
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.025);
+}
+
+.picture img {
+  display: block;
+  width: 100%;
+}
+
+.description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  text-align: center;
+}
+
+.summary {
+  font-weight: 900;
+  font-size: 1.75rem;
+  color: hsl(223, 47%, 23%);
+}
+
+.details {
+  color: rgb(132, 136, 160);
+}
+
+.package {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: rgb(248, 249, 254);
+  border-radius: 0.75rem;
+}
+
+.package i img {
+  display: block;
+}
+
+.package a {
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.package a:hover {
+  text-decoration: none;
+  color: rgb(118, 108, 241);
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.plan h2 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 1rem;
+  vertical-align: bottom;
+}
+
+.plan p {
+  color: rgb(132, 136, 160);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.payment {
+  background-color: rgb(57, 42, 223);
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.payment:hover {
+  background-color: rgb(118, 108, 241);
+  cursor: pointer;
+}
+
+.cancel {
+  display: flex;
+  justify-content: center;
+}
+
+.cancel h3 {
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: rgb(132, 136, 160);
+}
+
+.cancel h3:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
 }
 
 .attribution {
+  color: rgb(30, 25, 212);
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
-  color: black;
+  color: rgb(30, 25, 212);
+  font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.attribution a:visited {
+  color: rgb(30, 25, 212);
 }

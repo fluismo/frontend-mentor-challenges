@@ -1,0 +1,59 @@
+//text color
+$pale-violet: hsl(276, 100%, 81%); //(sub-heading at the top of the app UI)
+$moderate-violet: hsl(276, 55%, 52%); // (chat on the left)
+$desaturated-dark-violet: hsl(271, 15%, 43%); // (chat on the right)
+$grayish-blue: hsl(206, 6%, 79%); // (placeholder text)
+$very-dark-desaturated-violet: hsl(271, 36%, 24%); // (main heading)
+$dark-grayish-violet: hsl(270, 7%, 64%); // (paragraph)
+
+//gradients
+//these two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+$light-magenta: hsl(293, 100%, 63%);
+$light-violet: hsl(264, 100%, 61%);
+
+//secondary colors
+$white: hsl(0, 0%, 100%);
+$light-grayish-violet: hsl(270, 20%, 96%); //(app background)
+$very-dark-desaturated-violet: hsl(271, 36%, 24%); //(submit button background)
+$very-light-magenta: hsl(289, 100%, 72%); //(radio button outline)
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  // border: 1px dashed salmon;
+}
+
+.page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  max-height: 500px;
+  gap: 120px;
+}
+
+.phone {
+  max-width: 250px;
+  max-height: 500px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
